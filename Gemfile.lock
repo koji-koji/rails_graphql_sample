@@ -67,6 +67,10 @@ GEM
     ffi (1.15.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    graphiql-rails (1.7.0)
+      railties
+      sprockets-rails
+    graphql (1.12.14)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     listen (3.6.0)
@@ -98,6 +102,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.0.4)
@@ -156,10 +162,13 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  graphiql-rails
+  graphql
   listen (~> 3.2)
   mysql2 (>= 0.4.4)
   pry-byebug
   puma (~> 4.1)
+  rack-cors
   rails (~> 6.0.4)
   spring
   spring-watcher-listen (~> 2.0.0)
